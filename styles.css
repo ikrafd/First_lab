@@ -1,31 +1,56 @@
 body{
   margin: 0;
+  font-size: 110%;
 }
 
-.frame{
+a{
+  text-decoration: none;
+}
+.frame-1, .frame-2{
   background-color:lightblue;
   padding: 4px 8px;
   border: 1px solid black;
   border-radius: 20px;
 }
 
-/*.flex-start{
-  align-self: flex-start;
+.frame-1{
+  text-align: right;
 }
 
-.flex-end{
-  align-self: flex-end;
-}*/
+.frame-2{
+  text-align: left;
+}
+
+.frame-3{
+  background-color:lightpink;
+  padding: 5px 10px;
+  text-align: center;
+  margin: 5%;
+  overflow: hidden;
+  font-size: 120%;
+  width: 50%;
+}
+
+.content{
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+}
+
 
 .head{
+  width: 97%;
   display: flex;
   text-align: right;
   background-color:#c7d9f1;
   min-height:200px;
   height:fit-content;
-  padding: 20px;
+  padding: 1.5%;
   align-items: center;
   justify-content: space-between;
+  word-break: break-word;
+  white-space: normal;
+
 }
 
 .center{
@@ -46,28 +71,27 @@ body{
   flex: 1;
 }
 
-
-#first {
-  align-content: center;
+#first, #second{/*
+  align-content: center;*/
   flex-wrap: wrap;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   text-align: left;
   min-height:470px;
   width: 15%;
-  padding: 20px;
+  padding: 3%;
+  word-break: break-word;
+  white-space: normal;
+  justify-content: center;
+  flex-direction: column;
+
+}
+
+#first {
   background-color:#fce9da;
 }
 
 #second {
-  align-content: center;
-  flex-wrap: wrap;
-  display: flex;
-  align-items: center;
-  text-align: left;
-  min-height:470px;
-  width: 15%;
-  padding: 20px;
   background-color: #eaf2dd;
 }
 
@@ -78,6 +102,11 @@ body{
   align-items: flex-start;
 }
 
+.image{
+   width: 100%; 
+   height: auto;
+   margin: 5% 1%;
+}
 .inside{ 
   width: 100%;
   min-height:250px;
@@ -94,7 +123,9 @@ body{
   text-align: left;
   width: 40%;
   background-color:  #eaf2dd;
-  padding: 20px;
+  padding: 3%;
+  word-break: break-word;
+  white-space: normal;
 }
 
 
@@ -107,16 +138,22 @@ body{
   padding: 20px;
   background-color: #fce9da;
   align-self: stretch;
-  align-items: center
+  align-items: center;
+  word-break: break-word;
+  white-space: normal;
+  line-height:1;
+  justify-content: center
+
 }
 
 .footer{
   text-align: left;
-  padding: 20px;
+  padding: 3%;
   min-height:80px;
   display: flex;
   align-items: center;
   justify-content: space-between;
   background-color:#c7d9f1;
-/*  align-items: center;*/
+  word-break: break-word;
+  white-space: normal;
 }
